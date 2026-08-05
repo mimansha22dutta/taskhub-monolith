@@ -1,44 +1,43 @@
-# 🚀 TaskHub Monolith
+# TaskHub Monolith
 
-A modern full-stack task management application built using a **monolithic architecture**, featuring a responsive React frontend and a high-performance FastAPI backend.
+A full-stack task management application built using a monolithic architecture, consisting of a React frontend and a FastAPI backend.
 
-The application is fully containerized with Docker and deployed on **Microsoft Azure**, using **Nginx** as a reverse proxy and **Azure SQL Database** as the backend data store. The project demonstrates modern DevOps practices, cloud deployment, and scalable application architecture.
-
+The application is containerized with Docker and deployed on Microsoft Azure using Nginx as a reverse proxy and Azure SQL Database as the persistent data store.
 ---
 
-## ✨ Features
+## Features
 
-- Responsive React-based user interface
-- High-performance FastAPI backend
-- RESTful API architecture
+- React frontend
+- FastAPI REST API
 - Azure SQL Database integration
-- Secure database connectivity using `pyodbc` and ODBC Driver 18
-- Dockerized frontend and backend services
-- Nginx reverse proxy configuration
-- Cloud deployment on Microsoft Azure Virtual Machine
-- Production-ready project structure
+- Dockerized application
+- Nginx reverse proxy
+- Azure VM deployment
 
 ---
 
-## 🏗️ Architecture
+## Architecture Overview
 
 ```
-                Client
-                   │
-                   ▼
-              Nginx Reverse Proxy
-                   │
-        ┌──────────┴──────────┐
-        ▼                     ▼
+                 Client
+                    │
+                    ▼
+           Nginx Reverse Proxy
+                    │
+         ┌──────────┴──────────┐
+         ▼                     ▼
  React Frontend        FastAPI Backend
-                               │
-                               ▼
-                    Azure SQL Database
+                              │
+                              ▼
+                   Azure SQL Database
 ```
+
+The application is deployed on Microsoft Azure using Docker containers.
+Nginx acts as the reverse proxy, routing requests to the React frontend and FastAPI backend, while Azure SQL Database serves as the persistent data store.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technologies |
 |----------|--------------|
@@ -52,47 +51,20 @@ The application is fully containerized with Docker and deployed on **Microsoft A
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 taskhub-monolith/
 │
-├── ReactTodoUIMonolith/          # React Frontend
+├── ReactTodoUIMonolith/       
 │
-├── PyTodoBackendMonolith/        # FastAPI Backend
+├── PyTodoBackendMonolith/       
 │
 └── README.md
 ```
-
 ---
 
-## 📂 Project Components
-
-### 🔹 ReactTodoUIMonolith
-
-Contains the React-based frontend application responsible for the user interface, authentication flow, and interaction with backend APIs.
-
-### 🔹 PyTodoBackendMonolith
-
-Contains the FastAPI backend application responsible for business logic, REST APIs, database operations, and Azure SQL connectivity.
-
----
-
-## ☁️ Deployment
-
-The application is deployed on **Microsoft Azure Virtual Machine** using Docker containers.
-
-Deployment architecture includes:
-
-- Docker Containers
-- Nginx Reverse Proxy
-- FastAPI Backend
-- React Frontend
-- Azure SQL Database
-
----
-
-## 👩‍💻 Author
+## Author
 
 **Mimansha Dutta**
 
